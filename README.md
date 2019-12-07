@@ -1,4 +1,4 @@
-# EasySms Notification channel  For ThinkPHP6"
+# EasySms Notification channel  For ThinkPHP6
 
 使用 [overtrue/easy-sms](https://github.com/overtrue/easy-sms) 发送 ThinkPHP6 消息通知。
 
@@ -117,10 +117,12 @@ class PhoneNumber extends \Overtrue\EasySms\PhoneNumber
 ```php
         $to = '181*****932';   
         // 使用 Notifiable Trait 发送
-        (new \app\common\notification\user\PhoneNumber($to))->notify(new \app\common\notification\ValidateCode('SMS_15****670'));
+        (new \app\common\notification\user\PhoneNumber($to))
+            ->notify(new \app\common\notification\ValidateCode('SMS_15****670'));
 
         // 使用 Notification Facade 发送
-        \yunwuxin\facade\Notification::send( new \app\common\notification\user\PhoneNumber($to), new \app\common\notification\ValidateCode('SMS_15****670'));
+        \yunwuxin\facade\Notification::send( new \app\common\notification\user\PhoneNumber($to), 
+                new \app\common\notification\ValidateCode('SMS_15****670'));
         
 
 ```
