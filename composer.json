@@ -1,0 +1,35 @@
+{
+    "name": "liuwave/think-notification-easysms-channel",
+    "description": " EasySms Notification channel  For ThinkPHP6",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "liuwave",
+            "email": "liuwave@qq.com"
+        }
+    ],
+    "require": {
+        "overtrue/easy-sms": "^1.1",
+        "topthink/framework": "^6.0",
+        "yunwuxin/think-notification": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "liuwave\\notification\\EasySms\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "suggest": {
+
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "liuwave\\notification\\EasySms\\EasySmsChannelService"
+            ],
+            "config": {
+                "easysms": "src/config.php"
+            }
+        }
+    }
+}
