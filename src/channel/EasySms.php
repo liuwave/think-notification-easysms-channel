@@ -26,9 +26,10 @@ class EasySms extends Channel
         
         $message = $this->getMessage($notifiable, $notification);
         
-        app()
+        return app()
           ->make(\Overtrue\EasySms\EasySms::class)
           ->send($to, $message);
-        
+    
+    
     }
 }
