@@ -6,7 +6,7 @@
  * Description:
  */
 
-namespace liuwave\notification\EasySms\channel;
+namespace liuwave\notification\channel;
 
 use yunwuxin\Notification;
 use yunwuxin\notification\Channel;

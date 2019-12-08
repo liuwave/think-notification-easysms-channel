@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "liuwave\\notification\\EasySms\\": "src"
+            "liuwave\\notification\\": "src"
         }
     },
     "minimum-stability": "dev",
@@ -25,7 +25,7 @@
     "extra": {
         "think": {
             "services": [
-                "liuwave\\notification\\EasySms\\EasySmsChannelService"
+                "liuwave\\notification\\EasySmsChannelService"
             ],
             "config": {
                 "easysms": "src/config.php"

@@ -6,7 +6,7 @@
  * Description:
  */
 
-namespace liuwave\notification\EasySms;
+namespace liuwave\notification;
 
 use Overtrue\EasySms\EasySms;
 use think\facade\Config;

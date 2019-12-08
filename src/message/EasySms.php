@@ -5,7 +5,7 @@
  * Date: 2019/12/7 16:23
  * Description:
  */
-namespace liuwave\notification\EasySms\message;
+namespace liuwave\notification\message;
 
 use Overtrue\EasySms\Message;
 

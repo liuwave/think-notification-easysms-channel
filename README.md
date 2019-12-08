@@ -25,8 +25,8 @@ $ php think vendor:publish
 ```php
 namespace app\common\notification;
 
-use liuwave\notification\EasySms\channel\EasySms as EasySmsChannel;
-use liuwave\notification\EasySms\message\EasySms as EasySmsMessage;
+use liuwave\notification\channel\EasySms as EasySmsChannel;
+use liuwave\notification\message\EasySms as EasySmsMessage;
 use yunwuxin\Notification;
 
 /**
@@ -69,7 +69,7 @@ class ValidateCode extends Notification
     /**
      * @param \yunwuxin\notification\Notifiable $notifiable
      *
-     * @return \liuwave\notification\EasySms\message\EasySms
+     * @return \liuwave\notification\message\EasySms
      */
     public function toEasySms($notifiable)
     {
